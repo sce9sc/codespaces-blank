@@ -29,6 +29,14 @@ async function main() {
         }),
       },
     });
+
+    node.addEventListener("peer:update", (data) => {
+      console.log('peer:update',data);
+    });
+  
+    node.addEventListener("self:peer:update", (data) => {
+      console.log('self:peer:update',data);
+    });
   
     console.log(`Node started with id ${node.peerId.toString()}`);
     console.log("Listening on:");
