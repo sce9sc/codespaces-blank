@@ -13,7 +13,7 @@ async function main() {
       addresses: {
         listen: ["/ip4/0.0.0.0/tcp/4410/ws","/ip4/0.0.0.0/tcp/4430/wss"],//"/ip4/3.75.158.163/tcp/8085/ws","/ip4/3.125.183.140/tcp/8085/ws","/ip4/35.157.117.28/tcp/8085/ws"],
         // TODO check "What is next?" section
-        announce: ['/dns4/libp2p-relay-l2d1.onrender.com/tcp/4430/wss',"/dns4/libp2p-relay-l2d1.onrender.com/tcp/4410/ws'"]
+        announce: ['/dns4/libp2p-relay-l2d1.onrender.com/tcp/4430/wss',"/dns4/libp2p-relay-l2d1.onrender.com/tcp/4410/ws"]
       },
       transports: [webSockets()],
       connectionEncryption: [noise()],
