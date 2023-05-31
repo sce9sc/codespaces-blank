@@ -28,7 +28,7 @@ openssl x509 -req -sha256 -days 365 -in snakeoil.csr -signkey snakeoil.key -out 
     addresses: {
       listen: ["/ip4/0.0.0.0/tcp/4444/wss"],
       // TODO check "What is next?" section
-      announce: ["/dns4/libp2p-relay-l2d1.onrender.com/tcp/4444/wss/"],
+      announce: ["/dns4/libp2p-relay-l2d1.onrender.com/tcp/4444/wss", "/ip4/216.24.57.253/tcp/4444/wss"],
     },
     transports: [
       webSockets({
