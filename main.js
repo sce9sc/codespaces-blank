@@ -9,7 +9,7 @@ async function main() {
   
     const node = await createLibp2p({
       addresses: {
-        listen: ["/ip4/0.0.0.0/tcp/0/ws","/ip4/3.75.158.163/tcp/8085/ws","/ip4/3.125.183.140/tcp/8085/ws","/ip4/35.157.117.28/tcp/8085/ws"],
+        listen: ["/ip4/0.0.0.0/tcp/0/ws"],//"/ip4/3.75.158.163/tcp/8085/ws","/ip4/3.125.183.140/tcp/8085/ws","/ip4/35.157.117.28/tcp/8085/ws"],
         // TODO check "What is next?" section
         // announce: ['/dns4/auto-relay.libp2p.io/tcp/443/wss/p2p/QmWDn2LY8nannvSWJzruUYoLZ4vV83vfCBwd8DipvdgQc3']
       },
