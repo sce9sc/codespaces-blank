@@ -25,7 +25,7 @@ openssl x509 -req -sha256 -days 365 -in snakeoil.csr -signkey snakeoil.key -out 
   //   key: fs.readFileSync("./test_certs/snakeoil.key"),
   // });
 
-   const httpServer = https.createServer().listen(80);
+  //  const httpServer = https.createServer().listen(80);
 
   const node = await createLibp2p({
     addresses: {
