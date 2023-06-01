@@ -25,13 +25,15 @@ openssl x509 -req -sha256 -days 365 -in snakeoil.csr -signkey snakeoil.key -out 
   //   key: fs.readFileSync("./test_certs/snakeoil.key"),
   // });
 
-   const httpServer = https.createServer();
+   const httpServer = https.createServer().listen(80);
 
   const node = await createLibp2p({
     addresses: {
       listen: ["/ip4/0.0.0.0/tcp/3000/ws"],
       // TODO check "What is next?" section
-      announce: ["/dns4/libp2p-relay-l2d1.onrender.com/tcp/443/wss", "/ip4/216.24.57.253/tcp/443/wss"],
+      announce: ["/dns4/libp2p-relay-l2d1.onrender.com/tcp/443/wss",
+      "/ip4/216.24.57.253/tcp/443/wss",
+      "/dns4/libp2p-relay-l2d1.onrender.com/tcp/80/ws"],
     },
     transports: [
       webSockets({

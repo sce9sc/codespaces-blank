@@ -2,10 +2,10 @@
   "name": "libp2p-relay",
   "version": "1.0.0",
   "description": "",
-  "main": "httpServer.js",
+  "main": "relay.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node httpServer.js"
+    "start": "node relay.js"
   },
   "engines":{
     "node":"16.x"
